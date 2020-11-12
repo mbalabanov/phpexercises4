@@ -25,7 +25,7 @@
 
     <div class="container my-4">
         <div class='row pt-2 alert alert-secondary rounded-lg'>
-            <div class='col-10 offset-1 text-center pb-4'>
+            <div class='col-10 offset-1 text-center py-4'>
 
                 <?php 
                     require_once 'db_connect.php';
