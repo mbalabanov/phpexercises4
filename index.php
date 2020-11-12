@@ -109,7 +109,7 @@
                     <div class="row my-2">
                         <div class="col-4">
                             <button class="btn btn-primary m-2" type="submit" name="btn-login">Login</button>
-                            <a class="btn btn-secondary m-2" href="register.php">Register</a>
+                            <a class="btn btn-secondary m-2" href="register.php">Go to registration</a>
                         </div>
                     </div>
                 </form>

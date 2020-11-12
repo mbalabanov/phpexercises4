@@ -1,6 +1,13 @@
 <?php
     ob_start();
-    session_start(); // start a new session or continues the previous
+    session_start();
+
+    // if session is not set this will redirect to login page
+    if( !isset($_SESSION['user' ]) ) {
+        header("Location: index.php");
+        exit;
+    }
+
     if( isset($_SESSION['user'])!="" ){
         header("Location: home.php" ); // redirects to home.php
     }
@@ -157,7 +164,7 @@
                         <div class="row my-2">
                             <div class="col-4">
                                 <button type="submit" class="btn btn-primary m-2" name="btn-signup">Register</button>
-                                <a class="btn btn-secondary m-2" href="index.php">Login</a>
+                                <a class="btn btn-secondary m-2" href="index.php">Back to Login</a>
                             </div>
                         </div>
                     </form>
