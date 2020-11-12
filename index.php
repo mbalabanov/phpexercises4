@@ -35,7 +35,7 @@
             $error = true;
             $passError = "Please enter your password." ;
         }
-    
+
         // if there's no error, continue to login
         if (!$error) {
             $password = hash( 'sha256', $pass); // password hashing

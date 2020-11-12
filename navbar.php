@@ -18,6 +18,7 @@
         </ul>
         <?php
             if (isset($_SESSION['user'])) {
+                echo('<img src="'. $userRow['userImage' ] .'" height="40px" alt="'. $userRow['userEmail' ] .'" class="mx-3">');
                 echo('<span class="text-white">'. $userRow['userEmail' ] .'</span>');
                 echo('<a class="btn btn-light btn-sm mx-4" href="logout.php?logout">Logout</a>');
             }

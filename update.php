@@ -1,6 +1,11 @@
 <?php 
     require_once 'actions/db_connect.php';
 
+    if ( isset($_SESSION['user' ]) =="" ) {
+        header("Location: index.php");
+        exit;
+    }
+
     if ($_GET['id']) {
         $id = $_GET['id'];
         $sql = "SELECT * FROM meals WHERE meal_id = {$id}" ;

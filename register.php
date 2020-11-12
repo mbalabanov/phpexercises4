@@ -22,6 +22,8 @@
     $email = strip_tags($email);
     $email = htmlspecialchars($email);
 
+    $userImage = trim($_POST[ 'userimage']);
+
     $pass = trim($_POST['pass']);
     $pass = strip_tags($pass);
     $pass = htmlspecialchars($pass);
@@ -65,7 +67,7 @@
     $password = hash('sha256' , $pass);
     // if there's no error, continue to signup
     if( !$error ) {
-        $query = "INSERT INTO users(userName,userEmail,userPass) VALUES('$name','$email','$password')";
+        $query = "INSERT INTO users(userName,userEmail,userPass,userImage) VALUES('$name','$email','$password','$userImage')";
         $res = mysqli_query($connect, $query);
 
         if ($res) {
@@ -133,6 +135,14 @@
                             <div class="col-8">
                                 <input type="email" name="email" class="form-control" placeholder="Your email address" maxlength="40" value ="<?php echo $email ?>"  />
                                 <span  class="text-danger"> <?php echo $emailError; ?> </span> 
+                            </div>
+                        </div>
+                        <div class="row my-2">
+                            <div class="col-4">
+                                User Image URL (optional)
+                            </div>
+                            <div class="col-8">
+                                <input type="text" name="userimage" class="form-control" placeholder="The URL of your image" value ="<?php echo $userimage ?>"  />
                             </div>
                         </div>
                         <div class="row my-2">
