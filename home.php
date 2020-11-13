@@ -37,10 +37,10 @@
     </div>
 
     <div class="container">
-        <h2 class="mt-5">Unicórnio Tesão Meal Database</h2>
+        <h2 class="mt-5 text-center">Unicórnio Tesão Meal Database</h2>
         <div class="row">
-            <div class="col-12">
-                <p><a class="btn btn-primary m-2" href="create.php">Add a new meal</a></p>
+            <div class="col-12 text-center">
+                <a class="btn btn-primary m-2" href="create.php">Add a new meal</a>
             </div>
         </div>
         <div class="row mb-5 alert alert-primary pb-4 rounded-lg">

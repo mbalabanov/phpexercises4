@@ -108,10 +108,10 @@
 
         <?php include('navbar.php'); ?>
 
-        <div class="container my-4">
-            <div class="row mt-3 pt-2 alert alert-primary rounded-lg">
-                <div class="col-10 offset-1">
-                    <h2>Register</h2>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-8 offset-2 pt-2 alert alert-primary rounded-lg">
+                    <h2 class="my-4 text-center">Register</h2>
                     <form method="post"  action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>"  autocomplete="off" >
                         
                         <?php
@@ -127,7 +127,7 @@
                         ?>
                         
                         <div class="row my-2">
-                            <div class="col-4">
+                            <div class="col-4 text-right">
                                 Name
                             </div>
                             <div class="col-8">
@@ -136,7 +136,7 @@
                             </div>
                         </div>
                         <div class="row my-2">
-                            <div class="col-4">
+                            <div class="col-4 text-right">
                                 Email Address
                             </div>
                             <div class="col-8">
@@ -145,15 +145,15 @@
                             </div>
                         </div>
                         <div class="row my-2">
-                            <div class="col-4">
-                                User Image URL (optional)
+                            <div class="col-4 text-right">
+                                User Image URL<br><sup>(optional)</sup>
                             </div>
                             <div class="col-8">
                                 <input type="text" name="userimage" class="form-control" placeholder="The URL of your image" value ="<?php echo $userimage ?>"  />
                             </div>
                         </div>
                         <div class="row my-2">
-                            <div class="col-4">
+                            <div class="col-4 text-right">
                                 Password
                             </div>
                             <div class="col-8">
@@ -163,16 +163,16 @@
                         </div>
                         <div class="row my-2">
                             <div class="col-4">
+                            </div>
+                            <div class="col-8 text-center">
                                 <button type="submit" class="btn btn-primary m-2" name="btn-signup">Register</button>
-                                <a class="btn btn-secondary m-2" href="index.php">Back to Login</a>
+                                <a class="btn btn-secondary m-2" href="index.php">Back to login</a>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
-    
-    <?php include('footer.php'); ?>
 
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>

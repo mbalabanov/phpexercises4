@@ -71,17 +71,10 @@
 
     <?php include('navbar.php'); ?>
 
-    <div class="row">
-        <div class="col-12">
-            <img src="assets/header.jpg" alt="Good food at Restaurante Unicórnio Tesão" class="img-fluid shadow">
-        </div>
-    </div>
-
-    <div class="container">
-        <h2 class="mt-5">Unicórnio Tesão Meal Database</h2>
-            <div class="row mb-5 alert alert-primary pb-4 rounded-lg">
-            <div class="col-12">
-                <h2 class="my-4">Login</h2>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-6 offset-3 mb-5 alert alert-primary pb-4 rounded-lg">
+                <h2 class="my-4 text-center">Login</h2>
                 <form method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" autocomplete= "off">
                     <?php
                         if ( isset($errMSG) ) {
@@ -89,7 +82,7 @@
                     ?>
                     <?php } ?>
                     <div class="row my-2">
-                        <div class="col-4">
+                        <div class="col-4 text-right">
                             Email Address
                         </div>
                         <div class="col-8">
@@ -98,7 +91,7 @@
                         </div>
                     </div>
                     <div class="row my-2">
-                        <div class="col-4">
+                        <div class="col-4 text-right">
                             Password
                         </div>
                         <div class="col-8">
@@ -108,6 +101,8 @@
                     </div>
                     <div class="row my-2">
                         <div class="col-4">
+                        </div>
+                        <div class="col-8 text-center">
                             <button class="btn btn-primary m-2" type="submit" name="btn-login">Login</button>
                             <a class="btn btn-secondary m-2" href="register.php">Go to registration</a>
                         </div>
@@ -117,8 +112,6 @@
         </div>
 
     </div>
-
-    <?php include('footer.php'); ?>
 
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
